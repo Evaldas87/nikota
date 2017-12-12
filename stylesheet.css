@@ -1,0 +1,73 @@
+body { 
+	font-family: arial;
+	background-color: #e8edf3;
+}
+
+header {
+	background-color: #22264b;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	z-index: 10;
+}
+
+div {
+	padding-top: 100px;
+}
+
+.content {
+	padding-top: 80px;
+	width: 80%;
+	margin: auto;
+}
+
+.darbai img {
+	width: 280;
+	height: 200;
+}
+
+nav {
+	display: inline-block;
+	float: right;
+	padding-right: 50px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	padding: 10px;
+}
+
+nav a {
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1280px) {
+	nav a {
+		font-size: 3em;
+	}
+	div {
+		padding-top: 200px;
+	}
+}
+
+@media only screen and (max-width: 1280px) and (orientation: landscape) {
+	nav a { font-size: 2em; }
+	nav { padding-right: 20px; }
+	div { padding-top: 50px; }
+}
