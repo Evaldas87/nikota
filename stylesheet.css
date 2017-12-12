@@ -32,14 +32,18 @@ div {
 	height: 200;
 }
 
-.kontaktai {
+footer {
 	background-color: #22264b;
 	position: absolute;
 	left: 0;
 	width: 100%;
-	overflow-x: hidden;
+	color: #e8edf3;
+}
+
+.kontaktai {
 	padding-bottom: 50px;
 	color: #e8edf3;
+	float: left;
 }
 
 .kontaktai h1, h4, p {
@@ -48,6 +52,11 @@ div {
 
 .kontaktai a {
 	color: white;
+}
+
+.map {
+	float: right;
+	margin-right: 80px;
 }
 
 nav {
@@ -89,6 +98,12 @@ h1 {
 
 	.kontaktai {
 		font-size: 1.5em;
+	}
+
+	.map {
+		float: left;
+		margin-left: 80px;
+		padding-bottom: 40px;
 	}
 }
 
