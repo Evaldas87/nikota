@@ -23,9 +23,28 @@ div {
 	margin: auto;
 }
 
+.darbai {
+	margin-bottom: 100px;
+}
+
 .darbai img {
 	width: 280;
 	height: 200;
+}
+
+.kontaktai {
+	background-color: #22264b;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	overflow-x: hidden;
+	padding-bottom: 50px;
+	color: #e8edf3;
+}
+
+.kontaktai h1, h4, p {
+	padding-left: 80px;
+
 }
 
 nav {
