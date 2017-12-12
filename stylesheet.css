@@ -83,6 +83,10 @@ h1 {
 	div {
 		padding-top: 200px;
 	}
+
+	.kontaktai {
+		font-size: 1.5em;
+	}
 }
 
 @media only screen and (max-width: 1280px) and (orientation: landscape) {
