@@ -18,8 +18,10 @@
   			</ul>
   		</nav>
   	</header>
-  	    <div class="background-img"></div>
+  	    
   	    <div class="content">
+        <div class="background-img"></div>
+
 
   	        <div class="paslaugos box" ID="paslaugoslink">
   	    	  <h1>Paslaugos:</h1>
@@ -32,6 +34,7 @@
   			      <li>Atvykimas pas užsakovą;</li>
   			      <li>Profilių, kampuočių, U formos metalo ir vamzdžių lankstymas staklėmis.</li>
   		       </ul>
+
   	        </div>
   	        <div class="darbai box" ID="darbailink">
   		      <h1>Darbų pavyzdžiai:</h1>
@@ -42,6 +45,7 @@
   		      <a href="pvz5.jpg"><img src="pvz5.jpg" /></a>
   		      <a href="pvz6.jpg"><img src="pvz6.jpg" /></a>
   	        </div>
+
         </div>
         <footer>
             <div class="kontaktai" ID="kontaktailink">
@@ -52,11 +56,24 @@
               <p><strong>El. paštas:</strong> <a href="mailto:Nikota_j@hotmail.com">Nikota_j@hotmail.com</a></p>
               <p><strong>Įmonės kodas:</strong> 304579868</p>
             </div>
-            <div>
-            	<iframe class="map" width='450' height='250' frameborder='0' scrolling='no' marginheight='0' marginwidth='0' src='http://dc1.maps.lt/maps/quickmap.html#obj=412695%2C6234075&s=5000&xy=%5B412695%2C6234174%5D&bg=vector&title=Taikos%20g.%207%2C%2089482%20Palnosai&info=Viek%C5%A1ni%C5%B3%20sen.%2C%20Ma%C5%BEeiki%C5%B3%20r.%20sav.&iw=1&lang=lt&toggle25d=true'></iframe>
-            </div>
+            
+            <div id="map"></div>
+            
+            <script>
+            function initMap() {
+              var map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 56.232333, lng: 22.592194},
+                zoom: 14
+              });
+              var marker = new google.maps.Marker({
+                position: {lat: 56.232333, lng: 22.592194},
+                map: map
+              })
+            }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiefE1aGkb0cqKIso36DdcrFfYV6EJFwI&callback=initMap"></script>
+            
         </footer> 
        </div>
-   
   </body>
 </html>
